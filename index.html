@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 5 Style Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <header class="header">
+      <!-- ID requirement -->
+      <h1 id="pageTitle">Week 5 Style Guide</h1>
+      <p class="subtext">Fonts + colors used in my Week 4 layout page.</p>
+    </header>
+
+    <nav class="nav">
+      <a href="#fonts">Fonts</a>
+      <a href="#colors">Colors</a>
+      <a href="#usage">Where I Used Them</a>
+    </nav>
+
+    <main class="content">
+      <section id="fonts" class="card">
+        <h2>Fonts</h2>
+        <p><strong>Font list:</strong> Arial (sans-serif fallback)</p>
+
+        <div class="font-sample">
+          <h3 class="sample-title">Heading Sample (Arial)</h3>
+         <p class="sample-abc">Aa Bb Cc 123</p>
+        </div>
+
+        <div class="font-sample">
+          <h3 class="sample-title">Body Sample (Arial)</h3>
+          <p class="sample-text">
+            This is an example paragraph using the same font I used last week. It’s simple, readable, and works well for a clean layout.
+          </p>
+        </div>
+
+        <p><strong>Where used:</strong> The entire Week 4 page uses Arial for headings and body text.</p>
+      </section>
+
+      <section id="colors" class="card">
+        <h2>Color Palette</h2>
+        <p>These are the main colors from Week 4, with codes and examples.</p>
+
+        <div class="swatch-grid">
+          <div class="swatch">
+            <div class="swatch-color" style="background:#ffffff;"></div>
+            <div class="swatch-info">
+              <p class="swatch-name">White</p>
+              <p><strong>HEX:</strong> #ffffff</p>
+              <p><strong>Used for:</strong> main page background</p>
+            </div>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background:#000000;"></div>
+            <div class="swatch-info">
+              <p class="swatch-name">Black</p>
+              <p><strong>HEX:</strong> #000000</p>
+              <p><strong>Used for:</strong> default text color</p>
+            </div>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background:#cccccc;"></div>
+            <div class="swatch-info">
+              <p class="swatch-name">Light Gray Border</p>
+              <p><strong>HEX:</strong> #cccccc</p>
+              <p><strong>RGB:</strong> 204, 204, 204</p>
+              <p><strong>Used for:</strong> borders around sections (header/nav/content/sidebar/footer)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="usage" class="card">
+        <h2>Where I Used These Styles (Week 4)</h2>
+        <ul>
+          <li><strong>Arial:</strong> used on the whole page (headings + paragraphs).</li>
+          <li><strong>#ccc border:</strong> used on header, nav, content, sidebar, and footer containers.</li>
+          <li><strong>White background:</strong> page background.</li>
+          <li><strong>Black text:</strong> normal text color.</li>
+        </ul>
+
+        <p class="note">
+          My Week 4 design focused on a clean grid layout, so I kept the colors simple and used borders to separate sections clearly.
+        </p>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <h2>Quick Notes</h2>
+      <ul>
+        <li>External CSS file is linked.</li>
+        <li>One ID selector is used (pageTitle).</li>
+        <li>Multiple class selectors are used (layout, card, swatch, etc.).</li>
+      </ul>
+    </aside>
+
+    <footer class="footer">
+      <p>Week 5 Style Guide Page</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #000000;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "content sidebar"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Same border style as Week 4 */
+.header { grid-area: header; border: 1px solid #ccc; padding: 12px; }
+.nav { grid-area: nav; border: 1px solid #ccc; padding: 12px; }
+.content { grid-area: content; border: 1px solid #ccc; padding: 12px; }
+.sidebar { grid-area: sidebar; border: 1px solid #ccc; padding: 12px; }
+.footer { grid-area: footer; border: 1px solid #ccc; padding: 12px; text-align: center; }
+
+/* ID requirement */
+#pageTitle {
+  margin: 0 0 6px 0;
+}
+
+/* Classes requirement */
+.subtext {
+  margin: 0;
+}
+
+.nav a {
+  margin-right: 10px;
+  color: #000000;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.font-sample {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  background: #ffffff;
+}
+
+.sample-title {
+  margin: 0 0 6px 0;
+}
+
+.sample-text {
+  margin: 0 0 8px 0;
+}
+
+.sample-abc {
+  margin: 0;
+}
+
+.swatch-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.swatch {
+  border: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+
+.swatch-color {
+  min-height: 60px;
+}
+
+.swatch-info {
+  padding: 10px;
+}
+
+.swatch-name {
+  margin: 0 0 6px 0;
+  font-weight: bold;
+}
+
+.note {
+  margin-top: 10px;
+}
+
+/* Mobile layout: stack everything */
+@media (max-width: 700px) {
+  .layout {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .swatch-grid {
+    grid-template-columns: 1fr;
+  }
+}
